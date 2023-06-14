@@ -1,3 +1,10 @@
+// modified code to work with generic mouse, as USB Mouse Passthrough
+// modifed to work with generic USB 2.0 mouse: working mouse x and y positions, right click, left click, middle mouse click, 
+// also mouse scrollwheel all works (tested on generic usb mouse: "HP Wired mouse 1000")
+//
+// based of code from: https://github.com/mustaffxx/usb-host-shield-mouse
+// modifed by Id-ware: https://github.com/Id-ware/usb-host-shield-mouse
+
 #include <Mouse.h>
 #include <hiduniversal.h>
 #include "hidmouserptparser.h"
@@ -40,13 +47,6 @@ void onButtonDown(uint16_t buttonId) {
 			Serial.print("MOUSE_MIDDLE");
 			break;
 
-		case MOUSE_BUTTON4:
-			Serial.print("MOUSE_BUTTON4");
-			break;
-
-		case MOUSE_BUTTON5:
-			Serial.print("MOUSE_BUTTON5");
-			break;
 		default:
 			Serial.print("OTHER_BUTTON");
 			break;
@@ -70,23 +70,11 @@ void onButtonUp(uint16_t buttonId) {
 			Serial.print("MOUSE_MIDDLE");
 			break;
 
-		case MOUSE_BUTTON4:
-			Serial.print("MOUSE_BUTTON4");
-			break;
-
-		case MOUSE_BUTTON5:
-			Serial.print("MOUSE_BUTTON5");
-			break;
 		default:
 			Serial.print("OTHER_BUTTON");
 			break;
 	}
 	Serial.println(" released");
-}
-
-void onTiltPress(int8_t tiltValue) {
-	Serial.print("Tilt pressed: ");
-	Serial.println(tiltValue);
 }
 
 void onMouseMove(int8_t xMovement, int8_t yMovement, int8_t scrollValue) {
