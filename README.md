@@ -37,6 +37,8 @@ modifed by Id-ware: https://github.com/Id-ware/usb-host-shield-mouse-passthrough
 - make sure you using usb host shield library 2.0 version 1.6.2 (thats what <hiduniversal.h> uses iirc)
 - make sure you selected the right board and port from the arduino ide software
 - make sure "hidmousepassthrough.ino" is in the same folder with "hidmouserptparser.cpp" and "hidmouserptparser.h"
+- arduino in general (and also this leonardo/usb 2.0 host shield) is very sensetive to ESD (or static electricity), i had my arduino inside a clear heatshrink case i made that made it behave in an erratic way that sometimes the mouse would not work at all, after i took the board out of the case it started working normally again. so if you have issues like that make sure you not using plastic/rubber/heatshrink case for your arduino.
+also do not touch your arduino with your bare hands at the top or the bottom of the board, since fingers contain human fats that is conductive and can cause similar issues (to solve it clean your board with contact cleaner and lint-free/microfiber cloth or use 70% alcohol prep pad)
 
 # afterthought
 i made this version because i want to try in the future to reroute the mouse buttons to do different actions
