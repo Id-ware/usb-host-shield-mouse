@@ -9,8 +9,9 @@ here is a list of stuff that i tested and worked:
 - right click, left click, middle mouse click
 - mouse scrollwheel finally works
 
---
+
 based of code from: https://github.com/mustaffxx/usb-host-shield-mouse
+
 modifed by Id-ware: https://github.com/Id-ware/usb-host-shield-mouse
 
 
