@@ -1,4 +1,4 @@
-# usb-host-shield-mouse
+# usb-host-shield-mouse-passthrough
 This project is an example of using a [USB HOST SHIELD 2.0](https://github.com/felis/USB_Host_Shield_2.0) to interface with a Generic USB 2.0 mouse and Pass it through (via arduino leonardo) to the computer as an HID mouse.
 ```
 [USB Mouse] --> [USB Host Shield 2.0] --> [Arduino Leonardo] --FAKE HID USB--> [Computer]
