@@ -24,9 +24,10 @@ modifed by Id-ware: https://github.com/Id-ware/usb-host-shield-mouse
 1.  Connect the USB Host Shield to the Arduino Leonardo.
 2.  Connect the Generic USB 2.0 Mouse to the USB Host Shield.
 3.  Upload the "hidmousepassthrough.ino" sketch to the Arduino Leonardo.
-4. wait for the code to completely uploaded and finish, and if everything went well it should work, you should be able to use the mouse on your pc.
+4.  wait for the code to completely uploaded and finish, and if everything went well it should work, you should be able to use the mouse on your pc.
 
 # Optional steps (for debugging):
+5.  in "hidmousepassthrough.ino" arduino sketch, look for " bool Serialout = false; " (should be line 16), change it to " bool Serialout = true; "
 6.  Open the Arduino Serial Monitor and select a baud rate of 115200.
 7.  Move the mouse around and click the buttons to see the output on the Serial Monitor.
 
