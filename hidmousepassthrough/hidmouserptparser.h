@@ -3,7 +3,7 @@
 // also mouse scrollwheel all works (tested on generic usb mouse: "HP Wired mouse 1000")
 //
 // based of code from: https://github.com/mustaffxx/usb-host-shield-mouse
-// modifed by Id-ware: https://github.com/Id-ware/usb-host-shield-mouse
+// modifed by Id-ware: https://github.com/Id-ware/usb-host-shield-mouse-passthrough
 
 #if !defined(__HIDMOUSERPTPARSER_H__)
 
