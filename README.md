@@ -9,6 +9,8 @@ here is a list of stuff that i tested and worked:
 - right click, left click, middle mouse click
 - mouse scrollwheel finally works
 
+note: this was only tested on windows, and i do not have a plan to try to develop it to other platforms.
+if someone want to contribute extra platform support you can either fork this repo or send a pull request (it could take a long time since i'm not all the time on github, its a side hobby...)
 
 based of code from: https://github.com/mustaffxx/usb-host-shield-mouse
 
